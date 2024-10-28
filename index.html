@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.jpeg" type="image/jpg">
+    <title>Amazon</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .heading {
+            margin-left: 25px;
+            margin-top: 20px;
+            font-family: cursive;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            margin-left: 200px;
+            width: 30%;
+            border: none;
+            border-bottom: 2px solid black;
+            text-align: center;
+
+        }
+        .search-bar:hover{
+            
+            transform: scale(1.1);
+            transition: 0.5s;
+
+        }
+
+        .header {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .small-img {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        .img-1 {
+            margin: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .img-1:hover{
+            
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .middle-img {
+            border: 2px solid black;
+            border: 10px;
+            cursor: pointer;
+        }
+
+        .last-img {
+            width: 550px;
+            height: 550px;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .offer {
+            display: flex;
+            align-items: center;
+        }
+
+        .bankoffer1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .bankoffer2 {
+            width: 50px;
+            height: 50px;
+        }
+        .profile{
+          margin-left: 30px;
+        }
+        .bag
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            cursor:pointer;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0,0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+           
+        }
+        .box{
+            height: 600px;
+            width: 450px;
+            background-color: aliceblue;
+            margin: 100px auto;
+            padding: 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 40px;   
+            box-shadow: 20px 20px 20px black;
+            align-items: center;                 
+        }
+        .input-box{
+            border: none;
+            border-bottom: black solid;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: 45px;
+            width: 85%;
+            margin-left: 20px;
+            font-family: cursive;
+        }
+        .input-box:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+       
+        .input-head{
+            text-align: center;
+           margin-bottom: 20px;
+            
+        }
+        .input-button{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 50%;
+            border: none;
+            border-radius: 40px;
+            padding: 15px;
+            margin-left: 100px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cross{
+            position: relative;
+            left: 400px;
+            top: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="heading"><img src="./logo.jpeg" height="50px"> &nbsp;Amazon</span>
+        <input type="text" class="search-bar" placeholder="Search here">
+       
+        <span class="bag" onclick="bag()">
+            <img src="./profile.png" height="50px">
+            <h3>Profile</h3>
+        </span>
+       
+    
+
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="small-img">
+            <img src="./img-1.jpg" class="img-1" height="60px" onclick="changenumber(1)">
+            <img src="./img-2.jpg" class="img-1" height="60px" onclick="changenumber(2)">
+            <img src="./img-3.jpg" class="img-1" height="60px" onclick="changenumber(3)">
+            <img src="./img-4.jpg" class="img-1" height="60px" onclick="changenumber(4)">
+            <img src="./img-5.jpg" class="img-1" height="60px" onclick="changenumber(5)">
+            <img src="./img-6.jpg" class="img-1" height="60px" onclick="changenumber(6)">
+
+        </div>
+
+        <div class="middle-img">
+            <img src="./img-1.jpg" height="500px" id="change">
+
+        </div>
+
+        <div class="last-img">
+            <h1>Apple iPhone 16 (128 GB) - Ultramarine</h1>
+
+
+            <p class="para">
+                300+ bought in past month</p>
+
+            <hr>
+
+            <p>
+                Inclusive of all taxes<br><br>
+                EMI starts at ₹3,874. No Cost EMI available
+            </p>
+            <hr>
+            <h3 class="offer"><img src="./offer.png" height="30px"> &nbsp; &nbsp;Offers</h3>
+
+            <b>Size</b> : 128 GB &nbsp; 256 GB &nbsp; 512 GB<br> <br>
+            <b> Brand</b> : Apple <br> <br>
+            <b> Operating System</b>: iOS 17 <br> <br>
+            <b>RAM Memory Installed Size</b> :128 GB <br><br>
+            <b>CPU Model</b> :A Series A10 <br> <br>
+            <b>Memory Storage Capacity</b> : 128 GB <br> <br>
+
+        </div>
+
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="box">
+            <span class="cross" onclick="cross()">❌</span>
+            <h1 class="input-head">Edit Profile</h1>
+            <input type="text" placeholder="Enter your name" class="input-box">
+            <input type="tel" placeholder="Mobile number" class="input-box">
+            <input type="email" placeholder="Enter your e-mail" class="input-box">
+            <input type="text" placeholder="Enter your address" class="input-box">
+            <input type="text" placeholder="Enter your City" class="input-box">
+            <button type="text" placeholder="Enter your City" class="input-button" 
+            onclick="cross()">
+                Confirm
+            </button>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        function cross()
+        {
+            const crossimg = document.getElementById('overlay')
+            crossimg.style.display = 'none'
+        }
+
+        function bag()
+        {
+            const bagimg = document.getElementById('overlay')
+            bagimg.style.display = 'flex'
+        }
+
+
+        function changenumber(num)
+        {
+            const changeElement = document.getElementById('change');
+            if (num==1){
+                change.src='./img-1.jpg'
+            }
+            else if(num==2)
+            {
+                 change.src='./img-2.jpg'
+            }
+            else if(num==3)
+            {
+                 change.src='./img-3.jpg'
+            }
+            else if(num==4)
+            {
+                 change.src='./img-4.jpg'
+            }
+            else if(num==5)
+            {
+                 change.src='./img-5.jpg'
+            }
+            else if(num==6)
+            {
+                change.src='./img-6.jpg'
+            }
+          
+           
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
